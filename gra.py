@@ -4,6 +4,7 @@ def gameplay():
         print('<')
         if slowo == '':
             continue
+        print("cos")
             
-
+#huj ci na cipsko?
 gameplay()        
