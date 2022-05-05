@@ -9,6 +9,31 @@ def initial_word_formation():
         # print(slowo)
         return slowo
 
+def drawing_hang_station(zycia):
+    match zycia:
+        case 10:
+            print('\n\n\n\n\n\n')
+        case 9:
+            print('\n\n\n\n\n\n ______')
+        case 8:
+            print('\n|\n|\n|\n|\n|\n|______')
+        case 7:
+            print(' _____\n|\n|\n|\n|\n|\n|______')
+        case 6:
+            print(' _____\n|    |\n|\n|\n|\n|\n|______')
+        case 5:
+            print(' _____\n|    |\n|    0\n|\n|\n|\n|______')
+        case 4:
+            print(' _____\n|    |\n|    0\n|    |\n|\n|\n|______')
+        case 3:
+            print(' _____\n|    |\n|    0\n|   /|\n|\n|\n|______')
+        case 2:
+            print(' _____\n|    |\n|    0\n|   /|\ \n|\n|\n|______')
+        case 1:
+            print(' _____\n|    |\n|    0\n|   /|\ \n|  _/\n|\n|______')
+        case 0:
+            print(' _____\n|    |\n|    0\n|   /|\ \n|  _/ \_ \n|\n|______')
+
 def life_check(slowo):
     zdrapka = []
     dlugosc_slowa = len(slowo)
@@ -28,11 +53,15 @@ def life_check(slowo):
                 zdrapka[i] = literka
             if (zdrapka_check == zdrapka):
                 zycia -= 1
+        drawing_hang_station(zycia)
         print(' '.join(zdrapka))
+
 
 def gameplay():
     while True:
         slowo = initial_word_formation()
         life_check(slowo)
 
-gameplay()
+for i in range(11):
+    drawing_hang_station(10-i)
+#gameplay()
