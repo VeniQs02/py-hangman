@@ -1,12 +1,13 @@
 def initial_word_formation():
     while True:
+
         print("\n\nPodaj słowo które będzie trzeba odgadnąć: \n> ", end='')
         slowo = input()
         if slowo == '':
             print("Podaj poprawna wartosc!")
             continue
         slowo = list(slowo.upper())
-        print(slowo)
+        print('\n\n\n\n\n\n\n\n\n\n\n\n\n\n')
         return slowo
 
 def drawing_hang_station(zycia):
@@ -72,3 +73,6 @@ def gameplay():
 
 gameplay()
 #3001447
+
+#dodać wykluczanie spacji
+#dodać randomowe słowa i wybór trybu gry
