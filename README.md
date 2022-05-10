@@ -1,2 +1,2 @@
-# hangman
+#py hangman
  gra słowna
